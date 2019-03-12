@@ -1,11 +1,11 @@
 Jasny HTTP Dummy
 ===
 
-[![Build Status](https://travis-ci.org/jasny/http-dummy-middleware.svg?branch=master)](https://travis-ci.org/jasny/http-dummy-middleware)
-[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/jasny/http-dummy-middleware/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/jasny/http-dummy-middleware/?branch=master)
-[![Code Coverage](https://scrutinizer-ci.com/g/jasny/http-dummy-middleware/badges/coverage.png?b=master)](https://scrutinizer-ci.com/g/jasny/http-dummy-middleware/?branch=master)
-[![Packagist Stable Version](https://img.shields.io/packagist/v/jasny/http-dummy-middleware.svg)](https://packagist.org/packages/jasny/http-dummy-middleware)
-[![Packagist License](https://img.shields.io/packagist/l/jasny/http-dummy-middleware.svg)](https://packagist.org/packages/jasny/http-dummy-middleware)
+[![Build Status](https://travis-ci.org/jasny/http-dummy.svg?branch=master)](https://travis-ci.org/jasny/http-dummy)
+[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/jasny/http-dummy/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/jasny/http-dummy/?branch=master)
+[![Code Coverage](https://scrutinizer-ci.com/g/jasny/http-dummy/badges/coverage.png?b=master)](https://scrutinizer-ci.com/g/jasny/http-dummy/?branch=master)
+[![Packagist Stable Version](https://img.shields.io/packagist/v/jasny/http-dummy.svg)](https://packagist.org/packages/jasny/http-dummy)
+[![Packagist License](https://img.shields.io/packagist/l/jasny/http-dummy.svg)](https://packagist.org/packages/jasny/http-dummy)
 
 Dummy client and server middleware for PSR-7 requests. Works both as PSR-15 and double pass middleware.
 
