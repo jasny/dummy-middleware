@@ -1,0 +1,52 @@
+{
+    "name": "jasny/http-dummy",
+    "description": "Dummy client and server middleware for PSR-7 requests",
+    "license": "MIT",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Arnold Daniels",
+            "email": "arnold@jasny.net",
+            "homepage": "http://www.jasny.net"
+        }
+    ],
+    "support": {
+        "issues": "https://github.com/jasny/http-dummy/issues",
+        "source": "https://github.com/jasny/http-dummy"
+    },
+    "require": {
+        "php": ">=7.2.0",
+        "psr/http-message": "^1.0",
+        "psr/http-server-middleware": "^1.0"
+    },
+    "require-dev": {
+        "guzzlehttp/guzzle": "^6.3",
+        "jasny/php-code-quality": "^2.3",
+        "php-http/client-common": "^2.0",
+        "php-http/mock-client": "^1.3"
+    },
+    "autoload": {
+        "psr-4": {
+            "Jasny\\HttpDummy\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Jasny\\HttpDummy\\Tests\\": "tests/"
+        }
+    },
+    "scripts": {
+        "test": [
+            "phpstan analyse",
+            "phpunit",
+            "phpcs -p src"
+        ]
+    },
+    "config": {
+        "preferred-install": "dist",
+        "sort-packages": true,
+        "optimize-autoloader": true
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
