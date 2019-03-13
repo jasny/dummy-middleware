@@ -1,6 +1,6 @@
 <?php declare(strict_types=1);
 
-namespace Jasny\HttpDummy;
+namespace Jasny\Dummy;
 
 use Http\Client\Common\Plugin as HttpPlugin;
 use Http\Promise\Promise as HttpPromise;

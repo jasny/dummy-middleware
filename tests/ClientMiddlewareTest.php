@@ -1,6 +1,6 @@
 <?php
 
-namespace Jasny\HttpDummy\Tests;
+namespace Jasny\Dummy\Tests;
 
 use GuzzleHttp\Client as GuzzleClient;
 use GuzzleHttp\Handler\MockHandler as GuzzleMockHandler;
@@ -10,7 +10,7 @@ use GuzzleHttp\Promise\Promise as GuzzlePromise;
 use GuzzleHttp\Psr7\Request as GuzzleRequest;
 use Http\Mock\Client as HttpMockClient;
 use Http\Client\Common\PluginClient as HttpPluginClient;
-use Jasny\HttpDummy\ClientMiddleware;
+use Jasny\Dummy\ClientMiddleware;
 use Jasny\TestHelper;
 use PHPUnit\Framework\MockObject\MockObject;
 use PHPUnit\Framework\TestCase;
@@ -18,7 +18,7 @@ use Psr\Http\Message\RequestInterface;
 use Psr\Http\Message\ResponseInterface;
 
 /**
- * @covers \Jasny\HttpDummy\ClientMiddleware
+ * @covers \Jasny\Dummy\ClientMiddleware
  */
 class ClientMiddlewareTest extends TestCase
 {

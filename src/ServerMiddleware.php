@@ -1,6 +1,6 @@
 <?php declare(strict_types=1);
 
-namespace Jasny\HttpDummy;
+namespace Jasny\Dummy;
 
 use Psr\Http\Message\ServerRequestInterface as ServerRequest;
 use Psr\Http\Message\ResponseInterface as Response;

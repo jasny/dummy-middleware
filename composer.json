@@ -1,5 +1,5 @@
 {
-    "name": "jasny/http-dummy",
+    "name": "jasny/dummy-middleware",
     "description": "Dummy client and server middleware for PSR-7 requests",
     "license": "MIT",
     "type": "library",
@@ -11,8 +11,8 @@
         }
     ],
     "support": {
-        "issues": "https://github.com/jasny/http-dummy/issues",
-        "source": "https://github.com/jasny/http-dummy"
+        "issues": "https://github.com/jasny/dummy-middleware/issues",
+        "source": "https://github.com/jasny/dummy-middleware"
     },
     "require": {
         "php": ">=7.2.0",
@@ -27,12 +27,12 @@
     },
     "autoload": {
         "psr-4": {
-            "Jasny\\HttpDummy\\": "src/"
+            "Jasny\\Dummy\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Jasny\\HttpDummy\\Tests\\": "tests/"
+            "Jasny\\Dummy\\Tests\\": "tests/"
         }
     },
     "scripts": {

@@ -1,11 +1,11 @@
-Jasny HTTP Dummy
+Jasny Dummy Middleware
 ===
 
-[![Build Status](https://travis-ci.org/jasny/http-dummy.svg?branch=master)](https://travis-ci.org/jasny/http-dummy)
-[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/jasny/http-dummy/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/jasny/http-dummy/?branch=master)
-[![Code Coverage](https://scrutinizer-ci.com/g/jasny/http-dummy/badges/coverage.png?b=master)](https://scrutinizer-ci.com/g/jasny/http-dummy/?branch=master)
-[![Packagist Stable Version](https://img.shields.io/packagist/v/jasny/http-dummy.svg)](https://packagist.org/packages/jasny/http-dummy)
-[![Packagist License](https://img.shields.io/packagist/l/jasny/http-dummy.svg)](https://packagist.org/packages/jasny/http-dummy)
+[![Build Status](https://travis-ci.org/jasny/dummy-middleware.svg?branch=master)](https://travis-ci.org/jasny/dummy-middleware)
+[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/jasny/dummy-middleware/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/jasny/dummy-middleware/?branch=master)
+[![Code Coverage](https://scrutinizer-ci.com/g/jasny/dummy-middleware/badges/coverage.png?b=master)](https://scrutinizer-ci.com/g/jasny/dummy-middleware/?branch=master)
+[![Packagist Stable Version](https://img.shields.io/packagist/v/jasny/dummy-middleware.svg)](https://packagist.org/packages/jasny/dummy-middleware)
+[![Packagist License](https://img.shields.io/packagist/l/jasny/dummy-middleware.svg)](https://packagist.org/packages/jasny/dummy-middleware)
 
 Dummy client and server middleware for PSR-7 requests. Works both as PSR-15 and double pass middleware.
 
@@ -15,7 +15,7 @@ preventing the use of if's.
 Installation
 ---
 
-    composer require jasny/http-dummy
+    composer require jasny/dummy-middleware
 
 Usage
 ---
@@ -30,7 +30,7 @@ The middleware implements the PSR-15 `MiddlewareInterface`. As PSR standard many
 middleware, for example [Zend Stratigility](https://docs.zendframework.com/zend-stratigility/). 
 
 ```php
-use Jasny\HttpDummy\ServerMiddleware;
+use Jasny\Dummy\ServerMiddleware;
 use Zend\Stratigility\MiddlewarePipe;
 use Zend\Diactoros\ResponseFactory;
 
@@ -52,7 +52,7 @@ To get a callback to be used by libraries as [Jasny Router](https://github.com/j
 [Relay](http://relayphp.com/), use the `asDoublePass()` method.
 
 ```php
-use Jasny\HttpDummy\ServerMiddleware;
+use Jasny\Dummy\ServerMiddleware;
 use Relay\RelayBuilder;
 
 $middleware = new ServerMiddleware();
@@ -84,7 +84,7 @@ purpose PSR-7 middleware libraries, like [Relay](http://relayphp.com/), do suppo
 
 ```php
 use Relay\RelayBuilder;
-use Jasny\HttpDummy\ClientMiddleware;
+use Jasny\Dummy\ClientMiddleware;
 
 $middleware = new ClientMiddleware();
 
@@ -106,7 +106,7 @@ that creates a callback which can be used as Guzzle middleware.
 ```php
 use GuzzleHttp\HandlerStack;
 use GuzzleHttp\Client;
-use Jasny\HttpDummy\ClientMiddleware;
+use Jasny\Dummy\ClientMiddleware;
 
 $middleware = new ClientMiddleware();
 
@@ -126,7 +126,7 @@ The `forHttplug()` method for the middleware creates an object that can be used 
 ```php
 use Http\Discovery\HttpClientDiscovery;
 use Http\Client\Common\PluginClient;
-use Jasny\HttpDummy\ClientMiddleware;
+use Jasny\Dummy\ClientMiddleware;
 
 $middleware = new ClientMiddleware();
 

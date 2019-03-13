@@ -1,9 +1,9 @@
 <?php
 
-namespace Jasny\HttpDummy\Tests;
+namespace Jasny\Dummy\Tests;
 
 use Jasny\TestHelper;
-use Jasny\HttpDummy\ServerMiddleware;
+use Jasny\Dummy\ServerMiddleware;
 use PHPUnit\Framework\MockObject\MockObject;
 use PHPUnit\Framework\TestCase;
 use Psr\Http\Message\ResponseFactoryInterface;
@@ -13,7 +13,7 @@ use Psr\Http\Message\StreamInterface;
 use Psr\Http\Server\RequestHandlerInterface;
 
 /**
- * @covers \Jasny\HttpDummy\ServerMiddleware
+ * @covers \Jasny\Dummy\ServerMiddleware
  */
 class ServerMiddlewareTest extends TestCase
 {
