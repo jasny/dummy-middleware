@@ -19,7 +19,6 @@ class ServerMiddleware implements MiddlewareInterface
      * @param ServerRequest  $request
      * @param RequestHandler $handler
      * @return Response
-     * @throws \RuntimeException if unauthorized response can't be created
      */
     public function process(ServerRequest $request, RequestHandler $handler): Response
     {
